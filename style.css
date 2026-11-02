@@ -1,0 +1,66 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    width: 320px;
+    padding: 24px;
+    background-color: rgb(30, 41, 59);
+    margin: 0 auto;
+}
+
+input[name="quantity"] {
+    grid-column: span 4;
+    height: 60px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    text-align: right;
+}
+
+.calcButton {
+    height: 55px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: rgb(51, 65, 85);
+    color: rgb(248, 250, 252);
+}
+
+.calcButton:hover {
+    background-color: rgb(71, 85, 105);
+}
+
+.symbols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.calcButton:active {
+    transform: scale(0.96);
+}
+
+.calcButton:nth-of-type(11),
+.calcButton:nth-of-type(12),
+.calcButton:nth-of-type(13),
+.calcButton:nth-of-type(14) {
+    background-color: #0284c7;
+    color: #ffffff;
+}
+
+.calcButton:nth-of-type(11):hover,
+.calcButton:nth-of-type(12):hover,
+.calcButton:nth-of-type(13):hover,
+.calcButton:nth-of-type(14):hover {
+    background-color: rgb(3, 105, 161);
+}
+
+button[type="reset"] {
+    grid-column: span 4;
+    background-color: rgb(229, 48, 48);
+    color: rgb(255, 255, 255);
+}
