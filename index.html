@@ -7,9 +7,7 @@
 
 <body>
 
-    <h1>Math Calculations App</h1>
-
-    <h2>Number Calculator</h2>
+    <h1>Calculator</h1>
 
     <label>First Number:</label>
     <input type="number" id="number1">
@@ -21,10 +19,10 @@
 
     <br><br>
 
-    <button onclick="addNumbers()">Addition (+)</button>
-    <button onclick="subtractNumbers()">Subtraction (-)</button>
-    <button onclick="multiplyNumbers()">Multiplication (*)</button>
-    <button onclick="divideNumbers()">Division (/)</button>
+    <button onclick="addNumbers()">+</button>
+    <button onclick="subtractNumbers()">-</button>
+    <button onclick="multiplyNumbers()">x</button>
+    <button onclick="divideNumbers()">÷</button>
 
     <br><br>
 
@@ -34,8 +32,6 @@
     <button onclick="multiplyPi()">Multiply by Pi</button>
     <button onclick="cubeNumber()">Power of 3</button>
 
-    <p id="mathResult">Result will appear here.</p>
-
     <h2>Upload a File</h2>
 
     <input type="file" id="fileToLoad">
@@ -44,8 +40,10 @@
 
     <p id="Message"></p>
 
+       <p id="mathResult">Results:</p>
+
     <textarea id="fileInput" rows="5" cols="40"
-    placeholder="File contents will appear here"></textarea>
+    placeholder="Calculations will be here"></textarea>
 
     <br><br>
 
@@ -53,7 +51,7 @@
         Calculate Statistics
     </button>
 
-    <h2>Statistics Results</h2>
+    <h2>Statistics Results:</h2>
 
     <p id="statsResult"></p>
 

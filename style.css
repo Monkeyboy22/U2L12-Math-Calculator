@@ -1,16 +1,19 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: lightgray;
+    background-color: rgb(57, 61, 66);
     margin: 30px;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 25px;
 }
 
 h1 {
     text-align: center;
-    color: darkblue;
-}
-
-h2 {
-    color: darkblue;
+    color: rgba(0, 252, 50, 0.961);
 }
 
 input {
@@ -19,15 +22,19 @@ input {
 }
 
 button {
-    background-color: lightblue;
+    background-color: rgba(0, 252, 50, 0.961);
     padding: 8px 12px;
     margin: 5px;
     border: 1px solid gray;
     cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
 }
 
+
+
 button:hover {
-    background-color: skyblue;
+    background-color: rgb(6, 138, 33);
 }
 
 textarea {
@@ -36,5 +43,6 @@ textarea {
 }
 
 p {
-    font-size: 16px;
+    font-size: 35px;
+    font-weight: bold;
 }
