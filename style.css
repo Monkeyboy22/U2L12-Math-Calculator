@@ -1,66 +1,45 @@
 body {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
-    width: 320px;
-    padding: 24px;
-    background-color: rgb(30, 41, 59);
-    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+    margin: 30px;
 }
 
-input[name="quantity"] {
-    grid-column: span 4;
-    height: 60px;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    border: none;
-    color: rgb(255, 255, 255);
-    font-size: 2rem;
-    text-align: right;
+h1 {
+    text-align: center;
+    color: darkblue;
 }
 
-.calcButton {
-    height: 55px;
-    border: none;
-    border-radius: 10px;
-    font-size: 1.25rem;
-    font-weight: 600;
+h2 {
+    color: darkblue;
+}
+
+input {
+    padding: 8px;
+    margin: 5px;
+}
+
+button {
+    background-color: lightblue;
+    padding: 8px 12px;
+    margin: 5px;
+    border: 1px solid gray;
     cursor: pointer;
-    background-color: rgb(51, 65, 85);
-    color: rgb(248, 250, 252);
 }
 
-.calcButton:hover {
-    background-color: rgb(71, 85, 105);
+button:hover {
+    background-color: skyblue;
 }
 
-.symbols {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
+textarea {
+    width: 300px;
+    padding: 8px;
 }
 
-.calcButton:active {
-    transform: scale(0.96);
+p {
+    font-size: 16px;
 }
 
-.calcButton:nth-of-type(11),
-.calcButton:nth-of-type(12),
-.calcButton:nth-of-type(13),
-.calcButton:nth-of-type(14) {
-    background-color: #0284c7;
-    color: #ffffff;
-}
-
-.calcButton:nth-of-type(11):hover,
-.calcButton:nth-of-type(12):hover,
-.calcButton:nth-of-type(13):hover,
-.calcButton:nth-of-type(14):hover {
-    background-color: rgb(3, 105, 161);
-}
-
-button[type="reset"] {
-    grid-column: span 4;
-    background-color: rgb(229, 48, 48);
-    color: rgb(255, 255, 255);
+hr {
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
