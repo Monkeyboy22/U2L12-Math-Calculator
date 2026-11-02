@@ -17,7 +17,6 @@ function checkFileProperty(){
     }
   }
   document.getElementById("Message").innerHTML = txt;
-  //arya is very tall
 }
 
 function loadFileAsText() {
