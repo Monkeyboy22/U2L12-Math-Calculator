@@ -17,6 +17,7 @@ function checkFileProperty(){
     }
   }
   document.getElementById("Message").innerHTML = txt;
+  //arya is very short
 }
 
 function loadFileAsText() {
