@@ -1,58 +1,107 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
     <title>Math Calculations App</title>
+
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
     <h1>Calculator</h1>
 
-    <label>Insert Equation:</label>
-    <input type="text" id="equation" placeholder="example: 6 + 7">
+    <div class="calculator">
 
-    <br><br>
+        <input type="text" id="display"
+        placeholder="Enter a calculation">
 
-    <button onclick="addNumbers()">+</button>
-    <button onclick="subtractNumbers()">-</button>
-    <button onclick="multiplyNumbers()">x</button>
-    <button onclick="divideNumbers()">÷</button>
+        <div class="buttons">
 
-    <br><br>
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="deleteLast()">DEL</button>
+            <button onclick="appendValue('(')">(</button>
+            <button onclick="appendValue('/')">÷</button>
 
-    <button onclick="roundNumber()">Round</button>
-    <button onclick="squareNumber()">Square</button>
-    <button onclick="squareRoot()">Square Root</button>
-    <button onclick="multiplyPi()">Multiply by Pi</button>
-    <button onclick="cubeNumber()">Power of 3</button>
+            <button onclick="appendValue('7')">7</button>
+            <button onclick="appendValue('8')">8</button>
+            <button onclick="appendValue('9')">9</button>
+            <button onclick="appendValue('*')">×</button>
 
-    <h2>Upload a File</h2>
+            <button onclick="appendValue('4')">4</button>
+            <button onclick="appendValue('5')">5</button>
+            <button onclick="appendValue('6')">6</button>
+            <button onclick="appendValue('-')">-</button>
 
-    <input type="file" id="fileToLoad">
+            <button onclick="appendValue('1')">1</button>
+            <button onclick="appendValue('2')">2</button>
+            <button onclick="appendValue('3')">3</button>
+            <button onclick="appendValue('+')">+</button>
 
-    <button onclick="checkFileProperty()">Load Selected</button>
+            <button onclick="appendValue('0')">0</button>
+            <button onclick="appendValue('.')">.</button>
+            <button onclick="appendValue(')')">)</button>
+            <button onclick="calculate()">=</button>
 
-    <p id="Message"></p>
+        </div>
 
-       <p id="mathResult">Results:</p>
+        <h2>Extra Functions</h2>
 
-    <textarea id="fileInput" rows="5" cols="40"
-    placeholder="Calculations will be here"></textarea>
+        <div class="extraButtons">
 
-    <br><br>
+            <button onclick="roundNumber()">Round</button>
 
-    <button onclick="calculateStatistics()">
-        Calculate Statistics
-    </button>
+            <button onclick="squareNumber()">Square</button>
 
-    <h2>Statistics Results:</h2>
+            <button onclick="squareRoot()">Square Root</button>
 
-    <p id="statsResult"></p>
+            <button onclick="multiplyPi()">Pi</button>
 
-    <script src="js/saveText.js"></script>
-    <script src="js/readTextArea.js"></script>
-    <script src="js/script.js"></script>
+            <button onclick="cubeNumber()">Cube</button>
+
+        </div>
+
+        <p id="mathResult">Result:</p>
+
+    </div>
+
+
+    <div class="uploadSection">
+
+        <h2>Upload a File</h2>
+
+        <input type="file" id="fileToLoad">
+
+        <button onclick="checkFileProperty()">
+            Load File
+        </button>
+
+        <p id="Message"></p>
+
+        <textarea id="fileInput" rows="5"
+        placeholder="Uploaded file information"></textarea>
+
+        <br><br>
+
+        <button onclick="calculateStatistics()">
+            Calculate Statistics
+        </button>
+
+        <h2>Statistics Results</h2>
+
+        <p id="statsResult"></p>
+
+    </div>
+
+
+    <script src="saveText.js"></script>
+
+    <script src="readTextArea.js"></script>
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
